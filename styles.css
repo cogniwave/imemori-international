@@ -1,0 +1,79 @@
+/* styles.css */
+body {
+  font-family: 'Segoe UI', system-ui, sans-serif;
+  background: #f8f9fa;
+}
+
+#flag-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 30px;
+  padding: 20px 0;
+}
+
+.flag-container {
+  position: relative;
+  text-align: center;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.flag-box {
+  font-size: 100px;
+  width: 150px;
+  height: 112px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 8px;
+  border: 1px solid #dee2e6;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+  background: white;
+  text-decoration: none;
+  color: inherit;
+
+}
+
+.flag-box:hover {
+  text-decoration: none;
+}
+
+
+.flag-container:hover .flag-box {
+  transform: scale(1.05);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.flag-box.unsupported {
+  filter: grayscale(100%);
+  opacity: 0.7;
+}
+
+.ribbon {
+  position: absolute;
+  top: 10px;
+  left: -35px;
+  background: #dc3545;
+  color: white;
+  padding: 5px 35px;
+  transform: rotate(-45deg);
+  font-size: 14px;
+  font-weight: bold;
+  opacity: 0;
+  transition: opacity 0.3s ease 0.1s;
+  z-index: 1;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.flag-container.unsupported:hover .ribbon {
+  opacity: 1;
+}
+
+.flag-label {
+  margin-top: 15px;
+  font-size: 1.1rem;
+  font-weight: 500;
+  color: #212529;
+}
