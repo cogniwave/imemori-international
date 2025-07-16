@@ -3,18 +3,28 @@ body {
   background: #f8f9fa;
 }
 
+main.container {
+  max-width: 100% !important;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+
 #flag-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
   gap: 30px;
   padding: 20px 0;
 }
+
 
 .flag-container {
   position: relative;
   text-align: center;
   cursor: pointer;
   transition: all 0.3s ease;
+  width: 200px;
 }
 
 .flag-box {

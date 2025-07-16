@@ -1,37 +1,68 @@
 const countries = [
-  { code: "pt", name: { en: "Portugal", pt: "Portugal", es: "Portugal" }, supported: true, link: "https://imemori.pt" },
-  { code: "es", name: { en: "Spain", pt: "Espanha", es: "España" }, supported: false },
-  { code: "at", name: { en: "Austria", pt: "Áustria", es: "Austria" }, supported: false },
-  { code: "be", name: { en: "Belgium", pt: "Bélgica", es: "Bélgica" }, supported: false },
-  { code: "bg", name: { en: "Bulgaria", pt: "Bulgária", es: "Bulgaria" }, supported: false },
-  { code: "hr", name: { en: "Croatia", pt: "Croácia", es: "Croacia" }, supported: false },
-  { code: "cy", name: { en: "Cyprus", pt: "Chipre", es: "Chipre" }, supported: false },
-  { code: "cz", name: { en: "Czech Republic", pt: "República Checa", es: "República Checa" }, supported: false },
-  { code: "dk", name: { en: "Denmark", pt: "Dinamarca", es: "Dinamarca" }, supported: false },
-  { code: "ee", name: { en: "Estonia", pt: "Estónia", es: "Estonia" }, supported: false },
-  { code: "fi", name: { en: "Finland", pt: "Finlândia", es: "Finlandia" }, supported: false },
-  { code: "fr", name: { en: "France", pt: "França", es: "Francia" }, supported: false },
-  { code: "de", name: { en: "Germany", pt: "Alemanha", es: "Alemania" }, supported: false },
-  { code: "gr", name: { en: "Greece", pt: "Grécia", es: "Grecia" }, supported: false },
-  { code: "hu", name: { en: "Hungary", pt: "Hungria", es: "Hungría" }, supported: false },
-  { code: "ie", name: { en: "Ireland", pt: "Irlanda", es: "Irlanda" }, supported: false },
-  { code: "it", name: { en: "Italy", pt: "Itália", es: "Italia" }, supported: false },
-  { code: "lv", name: { en: "Latvia", pt: "Letónia", es: "Letonia" }, supported: false },
-  { code: "lt", name: { en: "Lithuania", pt: "Lituânia", es: "Lituania" }, supported: false },
-  { code: "lu", name: { en: "Luxembourg", pt: "Luxemburgo", es: "Luxemburgo" }, supported: false },
-  { code: "mt", name: { en: "Malta", pt: "Malta", es: "Malta" }, supported: false },
-  { code: "nl", name: { en: "Netherlands", pt: "Países Baixos", es: "Países Bajos" }, supported: false },
-  { code: "pl", name: { en: "Poland", pt: "Polónia", es: "Polonia" }, supported: false },
-  { code: "ro", name: { en: "Romania", pt: "Roménia", es: "Rumania" }, supported: false },
-  { code: "sk", name: { en: "Slovakia", pt: "Eslováquia", es: "Eslovaquia" }, supported: false },
-  { code: "si", name: { en: "Slovenia", pt: "Eslovénia", es: "Eslovenia" }, supported: false },
-  { code: "se", name: { en: "Sweden", pt: "Suécia", es: "Suecia" }, supported: false }
+  { code: "pt", supported: true, link: "https://imemori.pt" },
+  { code: "es", supported: false },
+  { code: "at", supported: false },
+  { code: "be", supported: false },
+  { code: "bg", supported: false },
+  { code: "hr", supported: false },
+  { code: "cy", supported: false },
+  { code: "cz", supported: false },
+  { code: "dk", supported: false },
+  { code: "ee", supported: false },
+  { code: "fi", supported: false },
+  { code: "fr", supported: false },
+  { code: "de", supported: false },
+  { code: "gr", supported: false },
+  { code: "hu", supported: false },
+  { code: "ie", supported: false },
+  { code: "it", supported: false },
+  { code: "lv", supported: false },
+  { code: "lt", supported: false },
+  { code: "lu", supported: false },
+  { code: "mt", supported: false },
+  { code: "nl", supported: false },
+  { code: "pl", supported: false },
+  { code: "ro", supported: false },
+  { code: "sk", supported: false },
+  { code: "si", supported: false },
+  { code: "se", supported: false }
 ];
 
 const translations = {
-  en: { notAvailable: "Not available yet" },
-  pt: { notAvailable: "Ainda não disponível" },
-  es: { notAvailable: "Aún no disponible" },
+  notAvailable: {
+    en: "Not available yet",
+    pt: "Ainda não disponível",
+    es: "Aún no disponible"
+  },
+  countries: {
+    pt: { en: "Portugal", pt: "Portugal", es: "Portugal" },
+    es: { en: "Spain", pt: "Espanha", es: "España" },
+    at: { en: "Austria", pt: "Áustria", es: "Austria" },
+    be: { en: "Belgium", pt: "Bélgica", es: "Bélgica" },
+    bg: { en: "Bulgaria", pt: "Bulgária", es: "Bulgaria" },
+    hr: { en: "Croatia", pt: "Croácia", es: "Croacia" },
+    cy: { en: "Cyprus", pt: "Chipre", es: "Chipre" },
+    cz: { en: "Czech Republic", pt: "República Checa", es: "República Checa" },
+    dk: { en: "Denmark", pt: "Dinamarca", es: "Dinamarca" },
+    ee: { en: "Estonia", pt: "Estónia", es: "Estonia" },
+    fi: { en: "Finland", pt: "Finlândia", es: "Finlandia" },
+    fr: { en: "France", pt: "França", es: "Francia" },
+    de: { en: "Germany", pt: "Alemanha", es: "Alemania" },
+    gr: { en: "Greece", pt: "Grécia", es: "Grecia" },
+    hu: { en: "Hungary", pt: "Hungria", es: "Hungría" },
+    ie: { en: "Ireland", pt: "Irlanda", es: "Irlanda" },
+    it: { en: "Italy", pt: "Itália", es: "Italia" },
+    lv: { en: "Latvia", pt: "Letónia", es: "Letonia" },
+    lt: { en: "Lithuania", pt: "Lituânia", es: "Lituania" },
+    lu: { en: "Luxembourg", pt: "Luxemburgo", es: "Luxemburgo" },
+    mt: { en: "Malta", pt: "Malta", es: "Malta" },
+    nl: { en: "Netherlands", pt: "Países Baixos", es: "Países Bajos" },
+    pl: { en: "Poland", pt: "Polónia", es: "Polonia" },
+    ro: { en: "Romania", pt: "Roménia", es: "Rumania" },
+    sk: { en: "Slovakia", pt: "Eslováquia", es: "Eslovaquia" },
+    si: { en: "Slovenia", pt: "Eslovénia", es: "Eslovenia" },
+    se: { en: "Sweden", pt: "Suécia", es: "Suecia" }
+  }
 };
 
 let currentLang = 'en';
@@ -63,12 +94,12 @@ function renderFlags() {
 
     const label = document.createElement("div");
     label.className = "flag-label";
-    label.textContent = country.name[currentLang];
+    label.textContent = translations.countries[country.code][currentLang];
 
     if (!country.supported) {
       const ribbon = document.createElement("div");
       ribbon.className = "ribbon";
-      ribbon.textContent = translations[currentLang].notAvailable;
+      ribbon.textContent = translations.notAvailable[currentLang];
       container.appendChild(ribbon);
     }
 
