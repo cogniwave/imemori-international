@@ -1,0 +1,24 @@
+{
+  "name": "imemori-international",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "node build.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/cogniwave/imemori-international.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/cogniwave/imemori-international/issues"
+  },
+  "homepage": "https://github.com/cogniwave/imemori-international#readme",
+  "description": "",
+  "devDependencies": {
+    "esbuild": "^0.25.6"
+  }
+}
