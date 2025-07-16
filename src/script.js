@@ -109,6 +109,9 @@ function renderFlags() {
   });
 }
 
+window.changeLanguage = changeLanguage;
+
+
 document.addEventListener("DOMContentLoaded", () => {
   renderFlags();
 });
